@@ -3,14 +3,14 @@ import { DEFAULT_CONFIG, evaluate, type EngineConfig, type Txn } from "@/lib/eng
 
 // POST /api/assess  { txn, config?, mode? }
 //   mode "mock" (default): scored by the built-in demo engine.
-//   mode "live": forwarded to BRITERION_API_URL (server-side, so the key never reaches the browser).
+//   mode "live": forwarded to BRIGHTERION_API_URL (server-side, so the key never reaches the browser).
 
-const LIVE_URL = process.env.BRITERION_API_URL;
-const LIVE_KEY = process.env.BRITERION_API_KEY;
+const LIVE_URL = process.env.BRIGHTERION_API_URL;
+const LIVE_KEY = process.env.BRIGHTERION_API_KEY;
 
 export async function GET() {
   return NextResponse.json({
-    service: "briterion-demo",
+    service: "brighterion-demo",
     endpoint: "POST /api/assess",
     liveConfigured: Boolean(LIVE_URL),
     liveHost: LIVE_URL ? new URL(LIVE_URL).host : null,
@@ -34,7 +34,7 @@ export async function POST(req: Request) {
 
   if (!LIVE_URL) {
     return NextResponse.json(
-      { error: "Live mode is not configured. Set BRITERION_API_URL (and optionally BRITERION_API_KEY)." },
+      { error: "Live mode is not configured. Set BRIGHTERION_API_URL (and optionally BRIGHTERION_API_KEY)." },
       { status: 501 },
     );
   }

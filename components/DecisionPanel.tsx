@@ -24,7 +24,7 @@ export default function DecisionPanel({ assessment, revealed, thresholds, busy, 
       <div className="flex items-center gap-2 bg-indigo-950 px-4 py-3 text-white">
         <Logo />
         <div className="min-w-0 flex-1">
-          <div className="text-sm font-semibold">Briterion merchant console</div>
+          <div className="text-sm font-semibold">Brighterion merchant console</div>
           <div className="truncate text-[11px] text-indigo-200">
             {assessment
               ? `${assessment.assessmentId} · ${assessment.processingMs}ms · ${assessment.source}`
@@ -35,7 +35,7 @@ export default function DecisionPanel({ assessment, revealed, thresholds, busy, 
 
       {!assessment && !busy && !error && (
         <div className="px-6 py-16 text-center text-sm text-stone-500">
-          Pick a scenario and press <b>Pay</b>. Briterion scores the transaction before it goes to authorisation.
+          Pick a scenario and press <b>Pay</b>. Brighterion scores the transaction before it goes to authorisation.
         </div>
       )}
       {busy && !assessment && (

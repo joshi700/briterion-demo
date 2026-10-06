@@ -32,7 +32,7 @@ export function useStored<T>(key: string, fallback: T): [T, (v: T) => void, bool
 }
 
 export function useEngineConfig(): [EngineConfig, (c: EngineConfig) => void, boolean] {
-  const [stored, set, ready] = useStored<EngineConfig | null>("briterion.config", null);
+  const [stored, set, ready] = useStored<EngineConfig | null>("brighterion.config", null);
   const config: EngineConfig = {
     rules: mergeRules(stored?.rules),
     thresholds: stored?.thresholds ?? DEFAULT_THRESHOLDS,
@@ -41,5 +41,5 @@ export function useEngineConfig(): [EngineConfig, (c: EngineConfig) => void, boo
 }
 
 export function useMode() {
-  return useStored<Mode>("briterion.mode", "mock");
+  return useStored<Mode>("brighterion.mode", "mock");
 }

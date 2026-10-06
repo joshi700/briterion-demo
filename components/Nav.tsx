@@ -27,7 +27,7 @@ export default function Nav() {
       <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 py-3 sm:px-6">
         <Link href="/" className="flex items-center gap-2">
           <Logo />
-          <span className="text-lg font-semibold tracking-tight">Briterion</span>
+          <span className="text-lg font-semibold tracking-tight">Brighterion</span>
           <span className="hidden text-sm text-stone-400 sm:inline">Fraud decisioning</span>
         </Link>
         <nav className="flex gap-1 text-sm">

@@ -3,7 +3,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
-  title: "Briterion Demo",
+  title: "Brighterion Demo",
   description: "Card-not-present fraud decisioning demo for the Mastercard Gateway.",
 };
 

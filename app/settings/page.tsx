@@ -35,7 +35,7 @@ export default function SettingsPage() {
       title: "Live endpoint",
       body: info?.liveConfigured
         ? `Transactions are forwarded server-side to ${info.liveHost}.`
-        : "Not configured. Set BRITERION_API_URL (and BRITERION_API_KEY) in the deployment environment.",
+        : "Not configured. Set BRIGHTERION_API_URL (and BRIGHTERION_API_KEY) in the deployment environment.",
       disabled: !info?.liveConfigured,
     },
   ];
@@ -85,7 +85,7 @@ export default function SettingsPage() {
         <h3 className="mt-4 text-xs font-semibold uppercase tracking-wider text-stone-400">Live endpoint contract</h3>
         <p className="mt-1 text-sm text-stone-500">
           In Live mode the server POSTs <code className="font-mono text-xs">{"{ txn, config }"}</code> to{" "}
-          <code className="font-mono text-xs">BRITERION_API_URL</code>, with the card number masked to BIN + last 4 and
+          <code className="font-mono text-xs">BRIGHTERION_API_URL</code>, with the card number masked to BIN + last 4 and
           the CVC removed. The response needs at least{" "}
           <code className="font-mono text-xs">{'{ "score": number, "decision": "APPROVE" | "REVIEW" | "DECLINE" }'}</code>.
           It can also return <code className="font-mono text-xs">results</code>,{" "}

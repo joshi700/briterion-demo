@@ -1,4 +1,4 @@
-// Mock Briterion decision engine. Pure and deterministic, so it runs in the
+// Mock Brighterion decision engine. Pure and deterministic, so it runs in the
 // browser (Rules tab preview) and in the /api/assess route alike.
 
 export type IpType = "residential" | "vpn" | "tor" | "datacenter";

@@ -1,6 +1,6 @@
-# Briterion demo: CNP fraud decisioning
+# Brighterion demo: CNP fraud decisioning
 
-Mock e-commerce checkout (Northwind Outfitters) next to a live Briterion merchant console that scores each
+Mock e-commerce checkout (Northwind Outfitters) next to a live Brighterion merchant console that scores each
 transaction before it goes to authorisation.
 
 ## Demo flows (pre-populated)
@@ -22,7 +22,7 @@ Every field in the checkout and in "Behind the scenes" can be edited, so you can
 
 `POST /api/assess` with `{ mode?: "mock" | "live", txn, config? }` → `{ score, decision, action, results, reasons, … }`
 
-Live mode forwards server-side to `BRITERION_API_URL` (Bearer `BRITERION_API_KEY`). See `.env.example`.
+Live mode forwards server-side to `BRIGHTERION_API_URL` (Bearer `BRIGHTERION_API_KEY`). See `.env.example`.
 
 ## Run
 

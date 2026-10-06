@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { inputCls } from "./ui";
 
-/** Mock 3-D Secure issuer challenge shown when Briterion returns REVIEW. */
+/** Mock 3-D Secure issuer challenge shown when Brighterion returns REVIEW. */
 export default function Challenge({
   amount,
   card,
@@ -33,7 +33,7 @@ export default function Challenge({
           }}
         >
           <p className="text-sm text-stone-600">
-            Briterion asked for extra verification. Enter the code we sent to your phone to approve a payment of{" "}
+            Brighterion asked for extra verification. Enter the code we sent to your phone to approve a payment of{" "}
             <b>${amount.toFixed(2)}</b> with card ending <b>{last4}</b>.
           </p>
           <input

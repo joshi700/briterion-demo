@@ -171,7 +171,7 @@ function Signals({
         className="flex w-full items-center justify-between px-5 py-3 text-left"
       >
         <span className="text-xs font-semibold uppercase tracking-wider text-stone-500">
-          Behind the scenes · signals collected for Briterion
+          Behind the scenes · signals collected for Brighterion
         </span>
         <span className="text-stone-400">{open ? "−" : "+"}</span>
       </button>
